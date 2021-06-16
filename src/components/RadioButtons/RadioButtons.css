@@ -1,0 +1,14 @@
+.form-radio-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.form-radio-buttons__input{
+margin-right: 1rem;
+font-family: 'Poppins', sans-serif;
+}
+

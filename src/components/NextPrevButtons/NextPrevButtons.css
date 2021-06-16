@@ -1,0 +1,34 @@
+.buttons-container{
+    display: flex;
+    justify-content: center;
+   margin-bottom: 1rem;
+   flex-direction: row;
+   
+}
+
+.btn-prev{
+    color: white;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+.btn-next{
+    color: white;
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+  .info-page{
+      color: white;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .total-count-text{
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 2rem;
+  }

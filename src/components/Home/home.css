@@ -1,0 +1,33 @@
+.title-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+body {
+   /* height: 100%;*/
+    background: #24282f;
+  }
+
+
+
+@media (max-width: 508px){
+    .logo-app{
+      width: 30rem;
+    }
+}
+
+@media (max-width: 500px){
+  .logo-app{
+    width: 25rem;
+  }
+}
+
+@media (max-width: 406px){
+  .logo-app{
+    width: 22rem;
+  }
+}
+
