@@ -11,11 +11,11 @@ export default function CharactersListContainer() {
     const [url, setUrl] = useState('https://rickandmortyapi.com/api/character/')
     const [info, setInfo] = useState({})
     const [results, setResults] = useState([])
-    const [search, setSearch] = useState()
-    const [selectedGender, setSelectedGender] = useState()
+    const [search, setSearch] = useState('')
+    const [selectedGender, setSelectedGender] = useState('')
     const [page, setPage] = useState(1)
     const [selectedStatus, setSelectedStatus] = useState({
-        selectedStatus: null
+        checked: ''
     })
     
 
@@ -95,7 +95,7 @@ function handleChange(event){
                 <Input onChangeInput={onChange} 
                             searchInput={search}
                         />
-                <CustomSelect options={options} onChangeSelect={onChangeSelect} defaultValue={options[0]}/> 
+                 <CustomSelect options={options} onChangeSelect={onChangeSelect} defaultValue={options[0]}/>  
             </div>
             <div className="container">
                  {

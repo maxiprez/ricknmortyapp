@@ -1,0 +1,115 @@
+[debug] [2021-06-16T20:06:50.651Z] ----------------------------------------------------------------------
+[debug] [2021-06-16T20:06:50.657Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-06-16T20:06:50.659Z] CLI Version:   9.13.0
+[debug] [2021-06-16T20:06:50.659Z] Platform:      win32
+[debug] [2021-06-16T20:06:50.659Z] Node Version:  v14.17.0
+[debug] [2021-06-16T20:06:50.662Z] Time:          Wed Jun 16 2021 17:06:50 GMT-0300 (hora estándar de Argentina)
+[debug] [2021-06-16T20:06:50.662Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-16T20:06:50.685Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-16T20:06:50.686Z] > authorizing via signed-in user (maxi.prez@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\RickMortyReact\rick-morty-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using ricknmortyapp. 
+[debug] [2021-06-16T20:07:14.286Z] > refreshing access token with scopes: []
+[debug] [2021-06-16T20:07:14.287Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-16T20:07:14.461Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 16 Jun 2021 20:07:12 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-16T20:07:14.493Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ricknmortyapp [none]
+[debug] [2021-06-16T20:07:15.691Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ricknmortyapp 403
+[debug] [2021-06-16T20:07:15.692Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ricknmortyapp {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-06-16T20:07:15.693Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-06-16T20:07:15.792Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Program Files\nodejs\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Program Files\nodejs\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Program Files\nodejs\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Program Files\nodejs\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Program Files\nodejs\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Program Files\nodejs\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project ricknmortyapp. Please make sure the project exists and your account has permission to access it.
+[debug] [2021-06-16T20:08:23.870Z] ----------------------------------------------------------------------
+[debug] [2021-06-16T20:08:23.875Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-06-16T20:08:23.875Z] CLI Version:   9.13.0
+[debug] [2021-06-16T20:08:23.876Z] Platform:      win32
+[debug] [2021-06-16T20:08:23.876Z] Node Version:  v14.17.0
+[debug] [2021-06-16T20:08:23.879Z] Time:          Wed Jun 16 2021 17:08:23 GMT-0300 (hora estándar de Argentina)
+[debug] [2021-06-16T20:08:23.879Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-16T20:08:23.898Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-16T20:08:23.899Z] > authorizing via signed-in user (maxi.prez@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\RickMortyReact\rick-morty-app
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using ricknmortyapp-89bdb. 
+[debug] [2021-06-16T20:08:30.188Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ricknmortyapp-89bdb [none]
+[debug] [2021-06-16T20:08:31.207Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ricknmortyapp-89bdb 200
+[debug] [2021-06-16T20:08:31.207Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ricknmortyapp-89bdb {"projectId":"ricknmortyapp-89bdb","projectNumber":"425133005989","displayName":"ricknmortyapp","name":"projects/ricknmortyapp-89bdb","resources":{"hostingSite":"ricknmortyapp-89bdb"},"state":"ACTIVE"}
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-06-16T20:08:31.213Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-16T20:08:31.214Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-16T20:08:31.321Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Wed, 16 Jun 2021 20:08:29 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-16T20:08:31.345Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/ricknmortyapp-89bdb/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-06-16T20:08:32.571Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 16 Jun 2021 20:08:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-06-16T20:08:32.574Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/ricknmortyapp-89bdb/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-06-16T20:08:34.467Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 16 Jun 2021 20:08:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-16T20:08:44.472Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/ricknmortyapp-89bdb/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-06-16T20:08:45.641Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 16 Jun 2021 20:08:43 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-06-16T20:08:45.650Z] > refreshing access token with scopes: []
+[debug] [2021-06-16T20:08:45.650Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-16T20:08:45.759Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Wed, 16 Jun 2021 20:08:43 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-16T20:08:45.788Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ricknmortyapp-89bdb [none]
+[debug] [2021-06-16T20:08:46.737Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ricknmortyapp-89bdb 200
+[debug] [2021-06-16T20:08:46.737Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ricknmortyapp-89bdb {"projectId":"ricknmortyapp-89bdb","projectNumber":"425133005989","displayName":"ricknmortyapp","name":"projects/ricknmortyapp-89bdb","resources":{"hostingSite":"ricknmortyapp-89bdb"},"state":"ACTIVE"}
